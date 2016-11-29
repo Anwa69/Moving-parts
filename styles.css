@@ -6,10 +6,15 @@ body {
 
 header {
   width:100%;
+<<<<<<< HEAD
   height: 300px;
   background-image: wp-content/uploads/2015/03/wiiu-zelda-link-.png
+=======
+  height: 400px;
+  background-image:("images/GG.jpg");
+>>>>>>> origin/master
   background-position: center;
-  background-size:cover;
+  background-size:400px;
 
 
 }
