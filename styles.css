@@ -6,10 +6,10 @@ body {
 
 header {
   width:100%;
-  height: 100px;
-  background-image:("images/Zelda.png");
+  height: 400px;
+  background-image:("images/GG.jpg");
   background-position: center;
-  background-size:cover;
+  background-size:400px;
 
 
 }
