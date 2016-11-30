@@ -6,14 +6,8 @@ body {
 
 header {
   width:100%;
-<<<<<<< HEAD
-  height: 300px;
-  background-image: wp-content/uploads/2015/03/wiiu-zelda-link-.png
-=======
-
->>>>>>> origin/master
   height: 400px;
-  background-image:("images/GG.jpg");
+  background-image:("images/Zeldaheader.jpg");
   background-position: center;
   background-size:400px;
 
