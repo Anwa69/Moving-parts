@@ -5,6 +5,16 @@
   canvas{border:#666 1px solid; }
   </style>
   <script type="application/javascript" language="javascript">
+  function draw(x,y) {
+    var canvas = document.getElementById('canvas');
+    var ctx =canvas.getContext('2d');
+    ctx.save();
+    ctx.clearRect(0,0,550,400);
+    ctx.fillStyle ="rgba (0,200,0,1)"
+    ctx.fillRect (x, 20, 50, 50);
+    x += 1;
+    var loopTimer = setTimeout('draw('+x+','+y+')',10);
+  }
   </script>
 </head>
     <meta charset="utf-8">
@@ -24,5 +34,7 @@
     <li><a href="https://www.google.no/search?q=Zelda&espv=2&biw=1920&bih=925&source=lnms&tbm=isch&sa=X&ved=0ahUKEwi2qIrL2c3QAhUjJ5oKHRKLCpgQ_AUIBigB#imgrc=TnUhSTNTbR8wcM%3A">Bilder</a></li>
     <li><a href="canvas.htm">:)</a></li>
   </nav>
+    <button onclick="draw(1,0)"<Draw></button>
+    <canvas id="canvas" width="550" height="400"></canvas>
   </body>
 </html>
