@@ -2,22 +2,36 @@
 <html>
 <head>
   <style type="text/css">
-  canvas{border:#666 9px solid; }
+  canvas{border:#345 20px solid; }
   </style>
   <script type="application/javascript" language="javascript">
   function draw(x,y) {
     var canvas = document.getElementById('brett');
     var ctx =canvas.getContext('2d');
     ctx.save();
-    ctx.clearRect(0,0,550,400);
+    ctx.clearRect(0,0,1000,950);
+    ctx.drawImage(imageObj, x, y);
     ctx.fillStyle ="rgba (0,200,0,1)"
-    ctx.fillRect (x, y, 50, 50);
-    ctx.fillRect (x, y + 100, 5, 10);
-
-    x =  x + 1;
-    y = y + 1;
+    ctx.fillRect =(x, 20, 50, 50)
+    if (retning==="ned") {
+      x =  x + 1;
+      y = y + 1;
+    }
+    if (retning==="opp") {
+      x= x - 1;
+      y= y - 1;
+    }
+    if (x>100) {
+    retning="opp"
+    }
+    if (x<10)
+    retning="ned"
     var loopTimer = setTimeout('draw('+x+','+y+')',10,10);
-  }
+  };
+   var imageObj = new Image();
+   var retning ="ned"
+
+   imageObj.src = 'zeldagg.jpg';
   </script>
 </head>
     <meta charset="utf-8">
