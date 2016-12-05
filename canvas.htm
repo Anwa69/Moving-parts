@@ -2,14 +2,14 @@
 <html>
 <head>
   <style type="text/css">
-  canvas{border:#345 20px solid; }
+  canvas{border:#398 9px solid; }
   </style>
   <script type="application/javascript" language="javascript">
   function draw(x,y) {
     var canvas = document.getElementById('brett');
     var ctx =canvas.getContext('2d');
     ctx.save();
-    ctx.clearRect(0,0,1000,950);
+    ctx.clearRect(0,0,790,700);
     ctx.drawImage(imageObj, x, y);
     ctx.fillStyle ="rgba (0,200,0,1)"
     ctx.fillRect =(x, 20, 50, 50)
@@ -52,6 +52,6 @@
     <li><a href="canvas.htm">:)</a></li>
   </nav>
     <button onclick="draw(1,0)">Click</button>
-    <canvas id="brett" width="550" height="400" style="" ></canvas>
+    <canvas id="brett" width="720" height="700" style="" ></canvas>
   </body>
 </html>
